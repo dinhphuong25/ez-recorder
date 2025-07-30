@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ez Recorder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Ez Recorder</h1>
+            <p class="subtitle">Record your screen, camera, or both with professional quality</p>
+        </header>
+
+        <main class="main-content">
+            <section class="recording-modes">
+                <h2 class="section-title">Choose Recording Mode</h2>
+                <div class="mode-cards">
+                    <div class="mode-card">
+                        <div class="mode-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="12" rx="2"/>
+                                <path d="M2 16h20"/>
+                            </svg>
+                        </div>
+                        <h3 class="mode-title">Screen Only</h3>
+                        <p class="mode-description">Record your screen</p>
+                        <button class="mode-button">Click to start preview</button>
+                    </div>
+
+                    <div class="mode-card">
+                        <div class="mode-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                <circle cx="12" cy="13" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="mode-title">Camera Only</h3>
+                        <p class="mode-description">Record your camera</p>
+                        <button class="mode-button">Click to start preview</button>
+                    </div>
+
+                    <div class="mode-card">
+                        <div class="mode-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8"/>
+                                <path d="M12 17v4"/>
+                                <rect x="14" y="12" width="6" height="8" rx="1"/>
+                            </svg>
+                        </div>
+                        <h3 class="mode-title">Screen + Camera</h3>
+                        <p class="mode-description">Record both screen and camera</p>
+                        <button class="mode-button">Click to start preview</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="audio-section">
+                <h2 class="section-title">Audio Recording</h2>
+                <div class="audio-control">
+                    <span class="audio-label">Include microphone audio</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
